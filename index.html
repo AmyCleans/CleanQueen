@@ -7,81 +7,7 @@
   
 
 
-<style>
-  /* BASE PAGE */
-  body {
-    margin: 0;
-    min-height: 100vh;
-    background-color: #ffffff !important;
-    color: #000000 !important;
-    font-family: Arial, sans-serif;
-  }
 
-  /* HEADER + HERO: HOT PINK */
-  .header,
-  .hero {
-    background: linear-gradient(
-      135deg,
-      #ff2bbf 0%,
-      #ffd6ee 100%
-    ) !important;
-    color: #000000 !important;
-  }
-
-  /* CONTENT SECTIONS: WHITE CARDS */
-  section,
-  .card,
-  .pricing,
-  .services,
-  .cards {
-    background-color: #ffffff !important;
-    color: #000000 !important;
-  }
-
-  /* REMOVE ONLY PURPLE COLORS (NOT ALL BACKGROUNDS) */
-  [style*="purple"],
-  [class*="purple"] {
-    background: none !important;
-    color: #000000 !important;
-  }
-
-  /* TEXT – FORCE READABILITY */
-  h1, h2, h3 {
-    color: #000000 !important;
-  }
-
-  p, li {
-    color: #000000 !important;
-  }
-
-  a {
-    color: #000000 !important;
-    font-weight: 600;
-  }
-
-  /* BUTTONS */
-  .button {
-    background-color: #ff2bbf !important;
-    color: #000000 !important;
-    border-radius: 999px;
-    font-weight: bold;
-    padding: 12px 20px;
-  }
-
-  .button.alt {
-    background-color: #ffffff !important;
-    border: 2px solid #ff2bbf !important;
-    color: #000000 !important;
-  }
-
-  /* LOGO */
-  .logo {
-    font-size: 1.7rem;
-    font-weight: 900;
-    letter-spacing: 0.6px;
-    color: #000000 !important;
-  }
-</style>
 ``
 
 
@@ -93,48 +19,7 @@
 <title>The Clean Queen | Professional Cleaning Services in Nanaimo, BC</title>
 <meta name="description" content="The Clean Queen offers routine, deep, move-out, and commercial cleaning across Nanaimo, BC.">
 <link rel="stylesheet" href="assets/styles.css">
-<style>
-  body {
-    margin: 0;
-    min-height: 100vh;
-    color: white;
-    background: radial-gradient(
-        1200px 800px at 20% 10%,
-        rgba(255, 43, 191, 0.55),
-        transparent 60%
-      ),
-      linear-gradient(
-        135deg,
-        #0b0b0f 0%,
-        #14141d 35%,
-        #ff2bbf 100%
-      );
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-  }
 
-/* BUBBLES ICON */
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.bubbles{
-  width: 44px;
-  height: 44px;
-  border-radius: 14px;
-  position: relative;
-  background:
-    radial-gradient(circle at 30% 30%, rgba(255,255,255,.95) 0 7px, transparent 8px),
-    radial-gradient(circle at 62% 38%, rgba(255,255,255,.80) 0 11px, transparent 12px),
-    radial-gradient(circle at 70% 75%, rgba(255,255,255,.90) 0 8px, transparent 9px),
-    radial-gradient(circle at 35% 78%, rgba(255,255,255,.65) 0 14px, transparent 15px);
-  outline: 2px solid rgba(0,0,0,.08);
-  box-shadow: 0 10px 24px rgba(255, 43, 191, .25);
-}
-``
-</style>
 
 <link rel="icon" href="assets/img/crown-favicon.svg">
 <script type="application/ld+json">
@@ -154,23 +39,26 @@
 </head>
 <body>
 
+
 <header class="header">
- 
+  <div class="wrap">
 
-<div class="logo">
-  <span class="bubbles" aria-hidden="true"></span>
-  <div>The Clean Queen</div>
-</div>
-``
+    <div class="logo">
+      <span class="bubbles" aria-hidden="true"></span>
+      <div>The Clean Queen</div>
+    </div>
 
-
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <nav class="nav">
+      index.htmlHome</a>
+      services.htmlServices</a>
+      about.htmlAbout</a>
+      contact.htmlContact</a>
     </nav>
+
   </div>
 </header>
+``
+
 
 <section class="hero">
   <div class="card">
