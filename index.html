@@ -20,311 +20,137 @@
 <meta name="description" content="The Clean Queen offers routine, deep, move-out, and commercial cleaning across Nanaimo, BC.">
 <link rel="stylesheet" href="assets/styles.css"> 
 <style>
-  /* ===== Clean Queen: Hot Pink + White + Black Text ===== */
-  :root{
-    --pink: #ff2bbf;
-    --pink-soft: #ffd6ee;
-    --ink: #000000;
-    --white: #ffffff;
-  }
 
-  body{
-    margin: 0;
-    min-height: 100vh;
-    background: var(--white);
-    color: var(--ink);
-    font-family: Arial, sans-serif;
-  }
-
-  /* Header + hero */
-  .header,
-  .hero{
-    background: linear-gradient(135deg, var(--pink) 0%, var(--pink-soft) 100%);
-    color: var(--ink);
-  }
-
-  /* Header layout */
-  .header .wrap{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-  }
-
-  /* Logo + bubbles */
-  .logo{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.7rem;
-    font-weight: 900;
-    letter-spacing: 0.6px;
-  }
-
-  .bubbles{
-    width: 36px;
-    height: 36px;
-    border-radius: 12px;
-    background:
-      radial-gradient(circle at 30% 30%, rgba(255,255,255,.95) 0 6px, transparent 7px),
-      radial-gradient(circle at 60% 40%, rgba(255,255,255,.75) 0 9px, transparent 10px),
-      radial-gradient(circle at 70% 75%, rgba(255,255,255,.85) 0 7px, transparent 8px);
-    outline: 2px solid rgba(0,0,0,.08);
-    box-shadow: 0 8px 18px rgba(255,43,191,.22);
-    flex: 0 0 auto;
-  }
-
-  /* Navigation */
-  .nav a{
-    color: var(--ink);
-    text-decoration: none;
-    font-weight: 600;
-    padding: 8px 10px;
-    border-radius: 999px;
-  }
-
-  .nav a:hover{
-    background: rgba(255,255,255,.55);
-  }
-
-  /* Cards / sections stay white */
-  .card,
-  section,
-  .section,
-  .cards,
-  .pricing{
-    background: var(--white);
-    color: var(--ink);
-  }
-
-  /* Buttons */
-  .button{
-    background: var(--pink);
-    color: var(--ink);
-    border-radius: 999px;
-    font-weight: 800;
-    padding: 12px 20px;
-  }
-
-  .button.alt{
-    background: var(--white);
-    border: 2px solid var(--pink);
-    color: var(--ink);
-  }
-
-
-/* FORCE REMOVE FOOTER CROWN (CSS-INJECTED) */
-.footer .logo::before,
-.footer .logo::after {
-  content: none !important;
-  display: none !important;
+/* ===== Clean Queen: Final Theme ===== */
+:root{
+  --pink: #ff2bbf;
+  --pink-soft: #ffe6f3;
+  --ink: #000000;
+  --white: #ffffff;
 }
 
-.footer .logo {
-  background-image: none !important;
-}
-
-
-/* ABSOLUTELY REMOVE ANY ICONS INSIDE FOOTER LOGO */
-.footer .logo i,
-.footer .logo svg,
-.footer .logo img {
-  display: none !important;
-}
-
-/* If the crown is a text/emoji node, hide the first child */
-.footer .logo > :first-child:not(.bubbles) {
-  display: none !important;
-}
-
-/* FINAL FOOTER CROWN KILL — hide all text except bubbles + name */
-.footer .logo {
-  font-size: 0 !important;
-}
-
-.footer .logo .bubbles,
-.footer .logo div {
-  font-size: 1.7rem !important;
-}
-
-/* ===== POLISH PATCH: black text, softer background, subtle hover ===== */
-
-/* 1) FORCE "PURPLE" TEXT TO BLACK (common accent selectors) */
-.badge,
-.badges .badge,
-.price strong,
-.small,
-.section h2,
-.card h3,
-a,
-a:visited {
-  color: var(--ink) !important;
-}
-
-/* If any elements are explicitly styled with purple-ish accent variables */
-[class*="purple"],
-[style*="purple"],
-[style*="#7"],
-[style*="#8"],
-[style*="#9"] {
-  color: var(--ink) !important;
-}
-
-/* 2) SOFTEN THE HEADER/HERO BACKGROUND */
-.header,
-.hero {
-  background: linear-gradient(
-    135deg,
-    #ff55c8 0%,
-    #ffe6f3 55%,
-    #ffffff 100%
-  ) !important;
-}
-
-/* Optional: give the page a soft, clean glow (very subtle) */
-body {
+/* Base */
+body{
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: var(--ink);
   background:
-    radial-gradient(900px 500px at 15% 0%, rgba(255, 85, 200, 0.12), transparent 60%),
-    radial-gradient(700px 450px at 90% 10%, rgba(255, 85, 200, 0.10), transparent 55%),
-    #ffffff !important;
+    radial-gradient(900px 500px at 15% 0%, rgba(255,85,200,.12), transparent 60%),
+    radial-gradient(700px 450px at 90% 10%, rgba(255,85,200,.10), transparent 55%),
+    #ffffff;
 }
 
-/* 3) SUBTLE HOVER EFFECTS */
-.nav a {
-  transition: background-color .18s ease, transform .18s ease;
-}
-.nav a:hover {
-  background: rgba(255,255,255,.65) !important;
-  transform: translateY(-1px);
+/* Header + hero */
+.header,
+.hero{
+  background: linear-gradient(135deg, #ff55c8 0%, var(--pink-soft) 60%, #ffffff 100%);
 }
 
-/* Buttons: small lift + soft shadow */
-.button,
-.button.alt {
-  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
-}
-.button:hover,
-.button.alt:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,.10);
-  filter: brightness(1.02);
+/* Header layout */
+.header .wrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-/* Cards: gentle lift so it feels clickable/polished */
-.card {
-  transition: transform .18s ease, box-shadow .18s ease;
-}
-.card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0,0,0,.10);
-}
-
-/* Respect people who prefer reduced motion */
-@media (prefers-reduced-motion: reduce) {
-  .nav a,
-  .button,
-  .button.alt,
-  .card {
-    transition: none !important;
-  }
-}
-``
-
-
-
-/* Hero badges / pills */
-.badge,
-.badges .badge {
-  color: #000000 !important;
+/* Logo + bubbles */
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.7rem;
+  font-weight: 900;
 }
 
-/* Any accent text used in cards or pricing */
-.price,
-.price strong,
-.small,
-.card strong {
-  color: #000000 !important;
+.bubbles{
+  width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.95) 0 6px, transparent 7px),
+    radial-gradient(circle at 60% 40%, rgba(255,255,255,.75) 0 9px, transparent 10px),
+    radial-gradient(circle at 70% 75%, rgba(255,255,255,.85) 0 7px, transparent 8px);
+  outline: 2px solid rgba(0,0,0,.08);
+  box-shadow: 0 8px 18px rgba(255,43,191,.22);
 }
 
-/* Headings that may inherit accent color */
-.hero h1,
-.hero h2,
-.section h2,
-.card h3 {
-  color: #000000 !important;
+/* Navigation */
+.nav a{
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 8px 10px;
+  border-radius: 999px;
+  transition: background .18s ease, transform .18s ease;
 }
-
-/* Catch-all for template accent colors */
-[class*="accent"],
-[class*="highlight"],
-[class*="pill"] {
-  color: #000000 !important;
-}
-``
-
-/* ===== SUBTLE HOVER EFFECTS ===== */
-
-/* Badges */
-.badge {
-  transition: background-color 0.15s ease, transform 0.15s ease;
-}
-.badge:hover {
-  background-color: rgba(0,0,0,0.04);
+.nav a:hover{
+  background: rgba(255,255,255,.65);
   transform: translateY(-1px);
 }
 
 /* Cards */
-.card {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+.card{
+  background: var(--white);
+  color: var(--ink);
+  transition: transform .18s ease, box-shadow .18s ease;
 }
-.card:hover {
+.card:hover{
   transform: translateY(-3px);
-  box-shadow: 0 14px 30px rgba(0,0,0,0.10);
+  box-shadow: 0 14px 30px rgba(0,0,0,.10);
 }
 
-/* Buttons (extra polish) */
+/* Buttons */
 .button,
-.button.alt {
-  transition: transform 0.18s ease, box-shadow 0.18s ease;
+.button.alt{
+  border-radius: 999px;
+  font-weight: 800;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.button{
+  background: var(--pink);
+  color: var(--ink);
+}
+.button.alt{
+  background: var(--white);
+  border: 2px solid var(--pink);
 }
 .button:hover,
-.button.alt:hover {
+.button.alt:hover{
   transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+  box-shadow: 0 10px 22px rgba(0,0,0,.12);
 }
 
-/* ===== FINAL: FORCE ALL PURPLE TEXT TO BLACK ===== */
-
-/* Hero badges / pills */
+/* ✅ FORCE BADGES / PURPLE TEXT TO BLACK */
 .badge,
-.badges .badge {
-  color: #000000 !important;
+.badges .badge{
+  color: var(--ink) !important;
   background-color: #ffffff !important;
-  border-color: rgba(0,0,0,0.15) !important;
+  border-color: rgba(0,0,0,.15) !important;
+  transition: background-color .15s ease, transform .15s ease;
+}
+.badge:hover{
+  background-color: rgba(0,0,0,.04);
+  transform: translateY(-1px);
 }
 
-/* Badge hover */
-.badge:hover {
-  background-color: rgba(0,0,0,0.04) !important;
-}
-
-/* Any accent text */
-.price,
-.price strong,
-.small,
-.card strong,
+/* Headings & small text */
+.hero h1,
+.hero h2,
 .section h2,
-.card h3 {
-  color: #000000 !important;
+.card h3,
+.small,
+.price,
+.price strong{
+  color: var(--ink) !important;
 }
 
-/* Kill template accent colors */
-[class*="accent"],
-[class*="highlight"],
-[class*="pill"] {
-  color: #000000 !important;
-}
-``
+/* Accessibility */
+@media (prefers-reduced-motion: reduce){
+  *{
+    transition: none !important;
+  }
 style>
 
 
