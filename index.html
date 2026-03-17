@@ -230,7 +230,7 @@ body {
 }
 ``
 
-/* ===== FORCE ALL ACCENT / PURPLE TEXT TO BLACK ===== */
+
 
 /* Hero badges / pills */
 .badge,
@@ -292,6 +292,39 @@ body {
   transform: translateY(-2px);
   box-shadow: 0 10px 22px rgba(0,0,0,0.12);
 }
+
+/* ===== FINAL: FORCE ALL PURPLE TEXT TO BLACK ===== */
+
+/* Hero badges / pills */
+.badge,
+.badges .badge {
+  color: #000000 !important;
+  background-color: #ffffff !important;
+  border-color: rgba(0,0,0,0.15) !important;
+}
+
+/* Badge hover */
+.badge:hover {
+  background-color: rgba(0,0,0,0.04) !important;
+}
+
+/* Any accent text */
+.price,
+.price strong,
+.small,
+.card strong,
+.section h2,
+.card h3 {
+  color: #000000 !important;
+}
+
+/* Kill template accent colors */
+[class*="accent"],
+[class*="highlight"],
+[class*="pill"] {
+  color: #000000 !important;
+}
+``
 style>
 
 
