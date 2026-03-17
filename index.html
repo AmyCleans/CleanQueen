@@ -146,6 +146,89 @@
 .footer .logo div {
   font-size: 1.7rem !important;
 }
+
+/* ===== POLISH PATCH: black text, softer background, subtle hover ===== */
+
+/* 1) FORCE "PURPLE" TEXT TO BLACK (common accent selectors) */
+.badge,
+.badges .badge,
+.price strong,
+.small,
+.section h2,
+.card h3,
+a,
+a:visited {
+  color: var(--ink) !important;
+}
+
+/* If any elements are explicitly styled with purple-ish accent variables */
+[class*="purple"],
+[style*="purple"],
+[style*="#7"],
+[style*="#8"],
+[style*="#9"] {
+  color: var(--ink) !important;
+}
+
+/* 2) SOFTEN THE HEADER/HERO BACKGROUND */
+.header,
+.hero {
+  background: linear-gradient(
+    135deg,
+    #ff55c8 0%,
+    #ffe6f3 55%,
+    #ffffff 100%
+  ) !important;
+}
+
+/* Optional: give the page a soft, clean glow (very subtle) */
+body {
+  background:
+    radial-gradient(900px 500px at 15% 0%, rgba(255, 85, 200, 0.12), transparent 60%),
+    radial-gradient(700px 450px at 90% 10%, rgba(255, 85, 200, 0.10), transparent 55%),
+    #ffffff !important;
+}
+
+/* 3) SUBTLE HOVER EFFECTS */
+.nav a {
+  transition: background-color .18s ease, transform .18s ease;
+}
+.nav a:hover {
+  background: rgba(255,255,255,.65) !important;
+  transform: translateY(-1px);
+}
+
+/* Buttons: small lift + soft shadow */
+.button,
+.button.alt {
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+}
+.button:hover,
+.button.alt:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+  filter: brightness(1.02);
+}
+
+/* Cards: gentle lift so it feels clickable/polished */
+.card {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,.10);
+}
+
+/* Respect people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav a,
+  .button,
+  .button.alt,
+  .card {
+    transition: none !important;
+  }
+}
+``
 </style>
 
 
