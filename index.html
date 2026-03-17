@@ -6,48 +6,71 @@
 <head>
   
 
+
 <style>
-  /* RESET PURPLE + BASE STYLES */
+  /* BASE PAGE */
   body {
     margin: 0;
     min-height: 100vh;
-    background: #ffffff !important;
+    background-color: #ffffff !important;
     color: #000000 !important;
     font-family: Arial, sans-serif;
   }
 
-  /* HOT PINK ACCENT LAYER */
+  /* HEADER + HERO: HOT PINK */
   .header,
   .hero {
     background: linear-gradient(
       135deg,
       #ff2bbf 0%,
-      #ffd1ec 100%
+      #ffd6ee 100%
     ) !important;
     color: #000000 !important;
   }
 
-  /* REMOVE ANY LEFTOVER GRADIENTS */
-  * {
-    background-image: none !important;
+  /* CONTENT SECTIONS: WHITE CARDS */
+  section,
+  .card,
+  .pricing,
+  .services,
+  .cards {
+    background-color: #ffffff !important;
+    color: #000000 !important;
   }
 
-  /* TEXT READABILITY */
-  h1, h2, h3, p, a {
+  /* REMOVE ONLY PURPLE COLORS (NOT ALL BACKGROUNDS) */
+  [style*="purple"],
+  [class*="purple"] {
+    background: none !important;
     color: #000000 !important;
+  }
+
+  /* TEXT – FORCE READABILITY */
+  h1, h2, h3 {
+    color: #000000 !important;
+  }
+
+  p, li {
+    color: #000000 !important;
+  }
+
+  a {
+    color: #000000 !important;
+    font-weight: 600;
   }
 
   /* BUTTONS */
   .button {
-    background: #ff2bbf !important;
+    background-color: #ff2bbf !important;
     color: #000000 !important;
     border-radius: 999px;
     font-weight: bold;
+    padding: 12px 20px;
   }
 
   .button.alt {
-    background: #ffffff !important;
-    border: 2px solid #ff2bbf;
+    background-color: #ffffff !important;
+    border: 2px solid #ff2bbf !important;
     color: #000000 !important;
   }
 
@@ -56,8 +79,11 @@
     font-size: 1.7rem;
     font-weight: 900;
     letter-spacing: 0.6px;
+    color: #000000 !important;
   }
 </style>
+``
+
 
 
 
