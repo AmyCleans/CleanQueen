@@ -5,26 +5,60 @@
 
 <head>
   
+
 <style>
+  /* RESET PURPLE + BASE STYLES */
   body {
     margin: 0;
     min-height: 100vh;
-    color: white;
-    background: radial-gradient(
-        1200px 800px at 20% 10%,
-        rgba(255, 43, 191, 0.55),
-        transparent 60%
-      ),
-      linear-gradient(
-        135deg,
-        #0b0b0f 0%,
-        #14141d 35%,
-        #ff2bbf 100%
-      );
-    background-attachment: fixed;
+    background: #ffffff !important;
+    color: #000000 !important;
     font-family: Arial, sans-serif;
   }
+
+  /* HOT PINK ACCENT LAYER */
+  .header,
+  .hero {
+    background: linear-gradient(
+      135deg,
+      #ff2bbf 0%,
+      #ffd1ec 100%
+    ) !important;
+    color: #000000 !important;
+  }
+
+  /* REMOVE ANY LEFTOVER GRADIENTS */
+  * {
+    background-image: none !important;
+  }
+
+  /* TEXT READABILITY */
+  h1, h2, h3, p, a {
+    color: #000000 !important;
+  }
+
+  /* BUTTONS */
+  .button {
+    background: #ff2bbf !important;
+    color: #000000 !important;
+    border-radius: 999px;
+    font-weight: bold;
+  }
+
+  .button.alt {
+    background: #ffffff !important;
+    border: 2px solid #ff2bbf;
+    color: #000000 !important;
+  }
+
+  /* LOGO */
+  .logo {
+    font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
 </style>
+
 
 
 <meta charset="utf-8">
