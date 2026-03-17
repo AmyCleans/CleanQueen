@@ -229,7 +229,39 @@ body {
   }
 }
 ``
-</style>
+
+/* ===== FORCE ALL ACCENT / PURPLE TEXT TO BLACK ===== */
+
+/* Hero badges / pills */
+.badge,
+.badges .badge {
+  color: #000000 !important;
+}
+
+/* Any accent text used in cards or pricing */
+.price,
+.price strong,
+.small,
+.card strong {
+  color: #000000 !important;
+}
+
+/* Headings that may inherit accent color */
+.hero h1,
+.hero h2,
+.section h2,
+.card h3 {
+  color: #000000 !important;
+}
+
+/* Catch-all for template accent colors */
+[class*="accent"],
+[class*="highlight"],
+[class*="pill"] {
+  color: #000000 !important;
+}
+``
+style>
 
 
 
