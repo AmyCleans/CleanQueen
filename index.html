@@ -112,11 +112,18 @@
     color: var(--ink);
   }
 
-/* REMOVE FOOTER CROWN ICON */
+
+/* FORCE REMOVE FOOTER CROWN (CSS-INJECTED) */
 .footer .logo::before,
 .footer .logo::after {
   content: none !important;
+  display: none !important;
 }
+
+.footer .logo {
+  background-image: none !important;
+}
+
 </style>
 
 
