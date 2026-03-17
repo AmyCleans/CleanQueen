@@ -124,6 +124,18 @@
   background-image: none !important;
 }
 
+
+/* ABSOLUTELY REMOVE ANY ICONS INSIDE FOOTER LOGO */
+.footer .logo i,
+.footer .logo svg,
+.footer .logo img {
+  display: none !important;
+}
+
+/* If the crown is a text/emoji node, hide the first child */
+.footer .logo > :first-child:not(.bubbles) {
+  display: none !important;
+}
 </style>
 
 
