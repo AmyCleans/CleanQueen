@@ -64,17 +64,56 @@ body{
   font-weight: 900;
 }
 
+
+/* REALISTIC SOAP BUBBLES */
 .bubbles{
-  width: 36px;
-  height: 36px;
-  border-radius: 12px;
+  width: 44px;
+  height: 44px;
+  position: relative;
+  border-radius: 50%;
   background:
     radial-gradient(circle at 30% 30%, rgba(255,255,255,.95) 0 6px, transparent 7px),
-    radial-gradient(circle at 60% 40%, rgba(255,255,255,.75) 0 9px, transparent 10px),
-    radial-gradient(circle at 70% 75%, rgba(255,255,255,.85) 0 7px, transparent 8px);
-  outline: 2px solid rgba(0,0,0,.08);
-  box-shadow: 0 8px 18px rgba(255,43,191,.22);
+    radial-gradient(circle at 65% 40%, rgba(255,255,255,.8) 0 10px, transparent 11px),
+    radial-gradient(circle at 50% 75%, rgba(255,255,255,.6) 0 14px, transparent 15px),
+    radial-gradient(circle, rgba(255,255,255,.25), rgba(255,255,255,.05) 60%, transparent 70%);
+  border: 1px solid rgba(255,255,255,.6);
+  box-shadow:
+    0 6px 16px rgba(255,43,191,.25),
+    inset 0 0 8px rgba(255,255,255,.6);
 }
+
+/* second bubble */
+.bubbles::before{
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  top: -6px;
+  left: -10px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.9) 0 4px, transparent 5px),
+    radial-gradient(circle, rgba(255,255,255,.25), transparent 70%);
+  border: 1px solid rgba(255,255,255,.6);
+  box-shadow: 0 4px 10px rgba(255,43,191,.2);
+}
+
+/* third bubble */
+.bubbles::after{
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  bottom: -6px;
+  right: -8px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.85) 0 3px, transparent 4px),
+    radial-gradient(circle, rgba(255,255,255,.2), transparent 70%);
+  border: 1px solid rgba(255,255,255,.6);
+  box-shadow: 0 3px 8px rgba(255,43,191,.18);
+}
+
 
 /* Navigation */
 .nav a{
