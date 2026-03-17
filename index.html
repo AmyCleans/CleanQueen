@@ -18,7 +18,101 @@
 <meta name="google-site-verification" content="p81NgGqAmUu5Z27QKaqUyexb4d2swlaKtmeLDkQup50" />
 <title>The Clean Queen | Professional Cleaning Services in Nanaimo, BC</title>
 <meta name="description" content="The Clean Queen offers routine, deep, move-out, and commercial cleaning across Nanaimo, BC.">
-<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/styles.css"> 
+<style>
+  /* ===== Clean Queen: Hot Pink + White + Black Text ===== */
+  :root{
+    --pink: #ff2bbf;
+    --pink-soft: #ffd6ee;
+    --ink: #000000;
+    --white: #ffffff;
+  }
+
+  body{
+    margin: 0;
+    min-height: 100vh;
+    background: var(--white);
+    color: var(--ink);
+    font-family: Arial, sans-serif;
+  }
+
+  /* Header + hero */
+  .header,
+  .hero{
+    background: linear-gradient(135deg, var(--pink) 0%, var(--pink-soft) 100%);
+    color: var(--ink);
+  }
+
+  /* Header layout */
+  .header .wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  /* Logo + bubbles */
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.7rem;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
+
+  .bubbles{
+    width: 36px;
+    height: 36px;
+    border-radius: 12px;
+    background:
+      radial-gradient(circle at 30% 30%, rgba(255,255,255,.95) 0 6px, transparent 7px),
+      radial-gradient(circle at 60% 40%, rgba(255,255,255,.75) 0 9px, transparent 10px),
+      radial-gradient(circle at 70% 75%, rgba(255,255,255,.85) 0 7px, transparent 8px);
+    outline: 2px solid rgba(0,0,0,.08);
+    box-shadow: 0 8px 18px rgba(255,43,191,.22);
+    flex: 0 0 auto;
+  }
+
+  /* Navigation */
+  .nav a{
+    color: var(--ink);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 10px;
+    border-radius: 999px;
+  }
+
+  .nav a:hover{
+    background: rgba(255,255,255,.55);
+  }
+
+  /* Cards / sections stay white */
+  .card,
+  section,
+  .section,
+  .cards,
+  .pricing{
+    background: var(--white);
+    color: var(--ink);
+  }
+
+  /* Buttons */
+  .button{
+    background: var(--pink);
+    color: var(--ink);
+    border-radius: 999px;
+    font-weight: 800;
+    padding: 12px 20px;
+  }
+
+  .button.alt{
+    background: var(--white);
+    border: 2px solid var(--pink);
+    color: var(--ink);
+  }
+</style>
+
 
 
 <link rel="icon" href="assets/img/crown-favicon.svg">
