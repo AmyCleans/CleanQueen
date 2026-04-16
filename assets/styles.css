@@ -85,3 +85,21 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
   box-shadow: 0 14px 32px rgba(255,43,191,.25);
   transform: translateY(-2px);
 }
+
+/* Hot pink border for contact form fields */
+.form input,
+.form textarea,
+.form select {
+  border: 2px solid rgba(255, 43, 191, 0.35);
+  border-radius: 12px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Pink glow on focus (click/typing) */
+.form input:focus,
+.form textarea:focus,
+.form select:focus {
+  outline: none;
+  border-color: #ff2bbf;
+  box-shadow: 0 0 0 3px rgba(255, 43, 191, 0.18);
+}
