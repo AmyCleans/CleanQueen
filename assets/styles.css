@@ -37,9 +37,19 @@ a:hover { text-decoration: underline; }
 .card.service h3 { margin: 0 0 6px; }
 .pricing { display:grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
 .price { background: #fff7e6; border: 1px dashed var(--gold); border-radius: 14px; padding: 16px; }
-.footer { background: #0f172a; color: #cbd5e1; margin-top: 24px; }
+
+.footer {
+  background: #fff0f6;
+  color: #111827;
+  margin-top: 24px;
+}
+
 .footer .wrap { max-width: 1040px; margin: 0 auto; padding: 24px 20px; display:flex; flex-wrap:wrap; align-items:flex-start; gap: 24px; }
-.footer a { color: #cbd5e1; }
+
+.footer a {
+  color: #6b7280;
+}
+
 .form { display:grid; gap:12px; }
 input, textarea, select { padding: 12px; border: 1px solid #e5e7eb; border-radius: 10px; }
 label { font-weight: 600; }
