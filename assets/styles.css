@@ -13,8 +13,7 @@ a:hover { text-decoration: underline; }
 .header { background: linear-gradient(135deg, var(--royal), var(--accent)); color: white; padding: 28px 20px; }
 .header .wrap { max-width: 1040px; margin: 0 auto; display:flex; align-items:center; justify-content: space-between; gap: 20px; }
 .logo { display:flex; align-items:center; gap:12px; font-weight: 800; letter-spacing: .3px; }
-.logo .crown { width: 36px; height: 36px; background: var(--gold); border-radius: 8px; position: relative; box-shadow: 0 4px 12px rgba(0,0,0,.25); }
-.logo .crown:before, .logo .crown:after { content:''; position:absolute; background: var(--gold); }
+
 .logo .crown:before { width: 10px; height: 10px; border-radius: 50%; top: -6px; left: 4px; }
 .logo .crown:after  { width: 10px; height: 10px; border-radius: 50%; top: -6px; right: 4px; }
 .nav a { margin: 0 10px; font-weight: 600; color: #fff; opacity: .95; }
