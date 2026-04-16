@@ -106,3 +106,22 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
   box-shadow: 0 0 0 4px rgba(255, 43, 191, 0.20);
 }
 
+/* Instagram hover micro-interaction */
+.footer a[href*="instagram"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: transform 0.18s ease, filter 0.18s ease;
+}
+
+.footer a[href*="instagram"]:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .footer a[href*="instagram"] {
+    transition: none;
+    transform: none;
+  }
+}
+
