@@ -74,3 +74,14 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
 .section a:hover {
   color: #ff2bbf;  /* subtle pink on hover */
 }
+
+/* Add hot pink outline to Services cards */
+.card.service {
+  border: 2px solid #ff2bbf;
+  box-shadow: 0 10px 24px rgba(255,43,191,.18);
+}
+
+.card.service:hover {
+  box-shadow: 0 14px 32px rgba(255,43,191,.25);
+  transform: translateY(-2px);
+}
