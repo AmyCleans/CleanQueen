@@ -86,12 +86,14 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
   transform: translateY(-2px);
 }
 
-/* Hot pink border for contact form fields */
+
+/* Hot pink border for contact form fields (strong + visible) */
 .form input,
 .form textarea,
 .form select {
-  border: 2px solid rgba(255, 43, 191, 0.35);
+  border: 2px solid #ff2bbf;
   border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(255, 43, 191, 0.10);
   transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -101,5 +103,6 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
 .form select:focus {
   outline: none;
   border-color: #ff2bbf;
-  box-shadow: 0 0 0 3px rgba(255, 43, 191, 0.18);
+  box-shadow: 0 0 0 4px rgba(255, 43, 191, 0.20);
 }
+
