@@ -125,3 +125,9 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
   }
 }
 
+/* Slight spacing polish for Contact page footer */
+.contact-page .footer a[href*="instagram"] {
+  margin-top: 6px;
+  display: inline-block;
+}
+
