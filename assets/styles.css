@@ -22,7 +22,15 @@ a:hover { text-decoration: underline; }
 
 
 .nav a { margin: 0 10px; font-weight: 600; color: #fff; opacity: .95; }
-.nav a:hover { opacity: 1; }
+.nav a:hover { opacity: 1; } 
+/* ✅ Active (current page) nav link */
+.nav a.active {
+  color: #000000 !important;     /* force black */
+  background: rgba(255,255,255,0.85);
+  opacity: 1;
+  border-radius: 999px;
+}
+
 .hero { max-width: 1040px; margin: 24px auto; padding: 0 20px 24px; display:grid; grid-template-columns: 1.2fr .8fr; gap: 24px; }
 .hero .card { background:white; border-radius: 16px; box-shadow: 0 12px 24px rgba(31,41,55,.08); padding: 24px; }
 .hero h1 { font-size: clamp(28px, 4vw, 46px); margin: 0; }
