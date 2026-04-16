@@ -57,3 +57,10 @@ hr { border: none; height: 1px; background: #e5e7eb; margin: 20px 0; }
 .small { font-size: 14px; opacity: .9; }
 @media (max-width: 900px){ .hero{grid-template-columns:1fr;} .cards{grid-template-columns:1fr 1fr;} }
 @media (max-width: 520px){ .cards{grid-template-columns:1fr;} .pricing{grid-template-columns:1fr;} }
+
+/* Contact form button: make it pink (does not affect other pages if you only want contact) */
+.form .button {
+  background: #ff2bbf;
+  box-shadow: 0 8px 14px rgba(255,43,191,.25);
+  color: #111827;
+}
